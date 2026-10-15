@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Storage App</title>
+<meta name="description" content="My Storage App is a personal file manager that combines the free storage of several Google Drive accounts into one dashboard.">
+<style>
+  :root { --bg:#ffffff; --fg:#1c1b1f; --muted:#5f6368; --accent:#3b5bdb; --line:#e3e3e8; --card:#f6f6f9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121316; --fg:#ececf1; --muted:#a1a1aa; --accent:#8ea2ff; --line:#2a2c33; --card:#1a1c21; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:46rem; margin:0 auto; padding:3rem 1.25rem 4rem; }
+  h1 { font-size:2.25rem; line-height:1.15; margin:0 0 .75rem; letter-spacing:-.01em; }
+  h2 { font-size:1.2rem; margin:2.25rem 0 .5rem; }
+  .lead { color:var(--muted); font-size:1.15rem; margin:0 0 1.5rem; }
+  ul { padding-left:1.25rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--accent); }
+  .note { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1rem 1.15rem; margin:1.75rem 0; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+  footer a { margin-right:1.25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>My Storage App</h1>
+  <p class="lead">A personal file manager that brings the free storage of several Google Drive accounts together in one simple dashboard.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Connects one or more Google Drive accounts that you own, using Google's standard sign-in and permission screen.</li>
+    <li>Shows how much storage is used and free in each connected account, side by side.</li>
+    <li>Uploads a file to whichever connected account has enough free space.</li>
+    <li>Lets you browse, preview, download, organize into folders and delete the files you uploaded through the app.</li>
+  </ul>
+
+  <h2>How it runs</h2>
+  <p>My Storage App is a small self-hosted project. It runs on its owner's own computer and is not a public service. There are no ads, no sign-ups for the public, and no data is sold or shared.</p>
+
+  <h2>Why it asks for access to Google Drive</h2>
+  <p>When you connect an account, Google asks you to allow the app to use your Google Drive and to see your email address and basic profile. The app uses Drive access to upload files, list and read the files you manage through the app, delete them when you ask, and read your storage quota. It uses the email address and profile only to show which account is connected. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <div class="note">
+    <strong>Unverified personal project.</strong> This is a small personal project. Google has not reviewed it, so Google may show an “unverified app” notice when you connect an account.
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:kabeergour21@gmail.com">kabeergour21@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
